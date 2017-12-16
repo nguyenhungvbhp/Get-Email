@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo 1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">MTSoftWare</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a style="cursor:pointer" onclick="myFacebookLogin()"><i style="color: dodgerblue"
+                                                                         class="fa fa-facebook-square"
+                                                                         aria-hidden="true"></i></span>&nbsp; Login with
+                Facebook</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h5 class="text-muted">Hãy sử dụng bài viết này của chúng tôi để kiểm tra!</h5>
+    <p id="coppied" class="text-success" style="display: none">Đã sao chép</p>
+
+    <div class="input-group form-group" >
+        <input id="coppy-link" type="text" class="form-control" value="https://www.facebook.com/groups/toanhanoi/permalink/1629312083814366/">
+        <div class="input-group-btn">
+            <button onclick="coppyLink()" class="btn btn-primary">
+                <i class="fa fa-clone" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="input-group form-group" >
+        <input id="link-post" type="text" class="form-control" placeholder="Nhập link bài viết vào đây">
+        <div class="input-group-btn">
+            <button onclick="getComments()" class="btn btn-primary">
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+    <div class="text-center">
+        <p class="text-danger" id="thong-bao" style="display: none">Không thể nhận dạng được ID bài viết!</p>
+        <p class="text-danger" id='nhan-dang' style="display: none">Không thể nhận dạng được bài viết!</p>
+    </div>
+
+</div>
+
+<hr>
+
+<div class="container">
+    <h2 class="text-center text-success">DANH SÁCH KHÁCH HÀNG</h2>
+    <table id="mytable" class="table table-hover">
+        <thead>
+        <tr>
+            <th>Thời gian bình luận</th>
+            <th>Facebook</th>
+            <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>2017/12/15-02:37:41</td>
+            <td><a href="https://www.facebook.com/thanh.tran.77985741" target="_blank">Trần Chung</a></td>
+            <td>john@example.com</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="my_script.js"></script>
+
+</body>
+</html>
