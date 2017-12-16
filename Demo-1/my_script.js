@@ -22,6 +22,7 @@ window.fbAsyncInit = function () {
             console.log("Logged in!");
         } else {
             console.log("Please loggin!");
+            alert("Hãy đăng nhập bằng Facebook để bắt đầu!");
             FB.login(function () {
                 // FB.api('/me/feed', 'post', {message: 'Hello, world!'});
             }, {scope: 'publish_actions'});
